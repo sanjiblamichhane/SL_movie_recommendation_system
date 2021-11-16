@@ -1,0 +1,15 @@
+\section{Introduction}
+A traditional ground-penetrating radar(GPR) is labor-intensive for surveying the sub-surface to
+investigate underground utilities such as concrete, metals, cables, asphalt, or masonry . Therefore, as a
+group, we intend to design an Omni-directional robot with GPR, which will autonomously detect objects
+around it, avoid obstacles and use radar pulses to image a subsurface. Our objective is to run the robot
+automatically in a given area, with the GPR extracting and loading the result of the scan of the surface
+layers for the image processing.
+
+The design of our project contains a four-wheel configuration with the ground-penetrating radar
+mounted in the middle, and it will be controlled by a Robot-operating system(ROS) package, which will be
+written in python. ROS will contain a path-finding algorithm, which will have the robot correctly
+running through the area as a grid without repeating any path. The robot will send its GPR scanning to a
+web interface so the result can be presented. Our group will be using \textcolor{red}{specially designed Omni-wheels}\footnote {See Appendix A}that can go in any direction. Since the robot has a specific wheel, the motor will have to match the
+wheels and handle the total weight running at an approximate speed of 1.5m/s, following with motor drivers whose
+operating voltage range is 12 V to 24 Volts. A printed circuit board will be designed to manage input/output terminals of the system. Therefore, the group's most significant focus at the beginning is to find the perfect fit motors, drivers, and the type of board that is compatible with all hardware components.

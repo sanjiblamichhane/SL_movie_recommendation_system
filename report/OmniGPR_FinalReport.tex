@@ -1,0 +1,34 @@
+\include{./packages}
+
+\begin{document}
+%%=======================  frontcover =========================
+%	\makeatletter
+%	\include{./TeX_files/frontmatter/title/frontpage}
+	%\makeatother
+%	\newpage
+%	\frontmatter
+	%%=======================  summary & Acknowledgement  =========================
+%		\maketitle
+%		\include{./TeX_files/frontmatter/summary/summary}
+%		\include{./TeX_files/frontmatter/acknowledgement/acknowledgement}
+%		\tableofcontents %% add toc
+%%=======================  chapters =========================
+	\mainmatter
+	%\setcounter{page}{1} %Start the actually document on page 1
+		\include{./TeX_files/mainmatter/chapters/chapter1/chapter01}
+%		\include{./TeX_files/mainmatter/chapters/chapter2/chapter02}
+%		\include{./TeX_files/mainmatter/chapters/chapter3/chapter03}
+%%=======================  references  =========================
+		\backmatter
+		\bibliographystyle{apacite}
+		\bibliography{./TeX\_files/backmatter/references/references}
+	
+%		\appendix
+%		\include{./TeX_files/backmatter/appendices/appendixA}
+%		\include{./TeX_files/backmatter/appendices/appendixB}
+%		\include{./TeX_files/backmatter/appendices/appendixC}
+%		\include{./TeX_files/backmatter/appendices/appendixD}
+
+	%%=======================  backcover =========================
+%		\include{./TeX_files/backmatter/backcover/backcover}
+\end{document}
